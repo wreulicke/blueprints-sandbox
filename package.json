@@ -1,0 +1,19 @@
+{
+  "name": "blueprints-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "aglio -i sample/Summary.apib --theme-template triple --server",
+    "build:triple": "aglio -i sample/Summary.apib --theme-template triple -o docs/triple.html",
+    "build:default": "aglio -i sample/Summary.apib -o docs/index.html",
+    "build": "mkdir docs || echo probably docs directory exists && npm-run-all -p build:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "aglio": "^2.3.0",
+    "npm-run-all": "^4.1.1"
+  }
+}

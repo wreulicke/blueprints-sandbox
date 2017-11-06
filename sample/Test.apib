@@ -1,0 +1,49 @@
+# Test Management [/test]
+
+## List Test [GET]
+
+Create a list test.
+
++ Request (application/json)
+    + Headers
+    
+            Authorization: Bearer sample-token
+
++ Response 200 (application/json)
+    + Body
+
+            [
+                {
+                    "name": "json" 
+                }
+            ]
+
+## Create Test [POST]
+
+Create a new test.
+
++ Request (application/json)
+    + Headers
+    
+            Authorization: Bearer sample-token
+
+    + Body 
+
+            {
+                "name": "testname"
+            }
+
++ Response 200 (application/json)
+    + Body
+
+            {
+                "name": "json" 
+            }
+
+
++ Response 409 (application/json)
+    + Body
+
+            {
+                "message": "Unable to create new test. Conflicted."
+            }
