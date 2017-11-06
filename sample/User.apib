@@ -16,20 +16,23 @@
                 }
             ]
 
-## List User [POST]
+## Create User [POST]
 
 + Request (application/json)    
     + Headers
     
             Authorization: Bearer sample-token
+    + Body
 
+            {
+                "name": "string"
+            }
+            
 + Response 200 (application/json)
     + Body
 
-            [
-                {
-                    "name": "json" 
-                }
-            ]
+            {
+                "name": "string" 
+            }
 
 
