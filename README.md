@@ -8,6 +8,12 @@ There are two demos.
 
 * [Three Column Example](https://wreulicke.github.io/blueprints-sandbox/triple.html)
 
+## Development
+
+```
+npm start
+```
+
 ## build 
 
 ```sh
